@@ -8,6 +8,11 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <color name="colorPrimary">#543884</color>
+    <color name="colorPrimaryDark">#262254</color>
+    <color name="colorAccent">#ddbff3</color>
+    <color name="colorSecond">#FFC728</color>
+
     /*
     TEXT
     */ --------------------------
