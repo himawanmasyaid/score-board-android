@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    /*
+    TEXT
+    */ --------------------------
+
+    <style name="textBody5" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/textBlack</item>
+        <item name="android:textSize">@dimen/_8ssp</item>
+        <item name="android:fontFamily">@font/regular_poppins</item>
+    </style>
+
+    <style name="textBody4" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/textBlack</item>
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:fontFamily">@font/regular_poppins</item>
+    </style>
+
+    <style name="textBody3" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/textBlack</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:fontFamily">@font/regular_poppins</item>
+    </style>
+
+    <style name="textBody2" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/textBlack</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:fontFamily">@font/regular_poppins</item>
+    </style>
+
+    <style name="textBody1" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/textBlack</item>
+        <item name="android:textSize">@dimen/_18ssp</item>
+        <item name="android:fontFamily">@font/regular_poppins</item>
+    </style>
+
+    <style name="textSub4" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/textBlack</item>
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:fontFamily">@font/medium_poppins</item>
+    </style>
+
+    <style name="textSub3" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/textBlack</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:fontFamily">@font/medium_poppins</item>
+    </style>
+
+    <style name="textSub2" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/textBlack</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:fontFamily">@font/medium_poppins</item>
+    </style>
+
+    <style name="textSub1" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/textBlack</item>
+        <item name="android:textSize">@dimen/_18ssp</item>
+        <item name="android:fontFamily">@font/medium_poppins</item>
+    </style>
+
+    <style name="textH4" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/textBlack</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:fontFamily">@font/bold_poppins</item>
+    </style>
+
+    <style name="textH3" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/textBlack</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:fontFamily">@font/bold_poppins</item>
+    </style>
+
+    <style name="textH2" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/textBlack</item>
+        <item name="android:textSize">@dimen/_18ssp</item>
+        <item name="android:fontFamily">@font/bold_poppins</item>
+    </style>
+
+    <style name="textH1" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/textBlack</item>
+        <item name="android:textSize">@dimen/_24ssp</item>
+        <item name="android:fontFamily">@font/bold_poppins</item>
+    </style>
+
+</resources>
