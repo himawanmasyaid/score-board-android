@@ -8,7 +8,7 @@ class SportModel(
     val total_score: Int,
     val image: Int = 0,
     val is_have_time_duration: Boolean = false,
-    val total_time_duration: Int = 0, // 2000 : 2 second (time millisecond)
+    val total_time_duration: Long = 0, // 2000 : 2 second (time millisecond)
 )
 
 fun getSportListData(): List<SportModel> {

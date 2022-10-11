@@ -10,4 +10,7 @@
     <string name="badminton">Badminton</string>
     <string name="badminton_desc">Total skor pertandingan ini adalah 21 poin</string>
 
+    <string name="total_game_score">Total skor pertandingan ini adalah %s poin</string>
+    <string name="total_game_duration">Durasi pertandingan ini adalah %s menit</string>
+
 </resources>
