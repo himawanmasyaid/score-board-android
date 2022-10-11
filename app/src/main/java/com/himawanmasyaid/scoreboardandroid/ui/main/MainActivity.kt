@@ -15,6 +15,14 @@ class MainActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+        initView()
+
+    }
+
+    private fun initView() {
+
+
+
     }
 
 }
