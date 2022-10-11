@@ -93,4 +93,14 @@
         <item name="android:fontFamily">@font/bold_poppins</item>
     </style>
 
+    /*
+    TEXT
+    */ --------------------------
+
+    <style name="textScoreBoard" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textSize">@dimen/_100ssp</item>
+        <item name="android:fontFamily">@font/extrabold_jetbrainsmono</item>
+    </style>
+
 </resources>
