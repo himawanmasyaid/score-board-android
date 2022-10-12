@@ -8,7 +8,9 @@ import com.himawanmasyaid.scoreboardandroid.common.convertSecondToMinutes
 import com.himawanmasyaid.scoreboardandroid.databinding.ItemSportsBinding
 import com.himawanmasyaid.scoreboardandroid.model.SportModel
 
-class SportsAdapter : RecyclerView.Adapter<SportsAdapter.ViewHolder>() {
+class SportsAdapter(
+    private val onClickSports: (SportModel) -> Unit
+): RecyclerView.Adapter<SportsAdapter.ViewHolder>() {
 
     var listData: MutableList<SportModel> = ArrayList()
 
@@ -62,6 +64,11 @@ class SportsAdapter : RecyclerView.Adapter<SportsAdapter.ViewHolder>() {
                 if (it.image != 0) {
                     ivIcon.setImageResource(it.image)
                 }
+
+                itemView.setOnClickListener { view ->
+                    onClickSports(it)
+                }
+
             }
 
         }

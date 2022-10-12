@@ -22,4 +22,14 @@
     <color name="textYellow">#FFC728</color>
     <color name="textBlack">#303030</color>
 
+    /*
+    BACKGROUND
+    */ --------------------------
+<!--    <color name="background_dark">#030304</color>-->
+<!--    <color name="background_dark">#070B0C</color>-->
+    <color name="background_dark">#121212</color>
+    <color name="background_light">#FFFFFFFF</color>
+    <color name="background_score">#212121</color>
+
+
 </resources>

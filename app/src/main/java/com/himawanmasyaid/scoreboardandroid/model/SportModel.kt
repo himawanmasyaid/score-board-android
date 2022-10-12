@@ -29,3 +29,11 @@ fun getSportListData(): List<SportModel> {
     )
 
 }
+
+fun getSportDetail(id: Int) : SportModel?{
+    return try {
+        getSportListData().find { it.id == id }
+    } catch (error: Exception) {
+        null
+    }
+}

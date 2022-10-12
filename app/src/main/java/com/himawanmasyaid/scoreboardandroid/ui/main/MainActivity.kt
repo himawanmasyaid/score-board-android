@@ -1,5 +1,6 @@
 package com.himawanmasyaid.scoreboardandroid.ui.main
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -8,7 +9,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.himawanmasyaid.scoreboardandroid.R
 import com.himawanmasyaid.scoreboardandroid.common.viewBinding
 import com.himawanmasyaid.scoreboardandroid.databinding.ActivityMainBinding
+import com.himawanmasyaid.scoreboardandroid.model.SportModel
 import com.himawanmasyaid.scoreboardandroid.ui.base.BaseActivity
+import com.himawanmasyaid.scoreboardandroid.ui.score.ScoreBoardActivity
 
 class MainActivity : BaseActivity() {
 
@@ -16,7 +19,9 @@ class MainActivity : BaseActivity() {
     private val viewModel by viewModels<MainViewModel>()
 
     private val adapter by lazy(LazyThreadSafetyMode.NONE) {
-        SportsAdapter()
+        SportsAdapter(
+            ::onDirectScoreBoard
+        )
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -47,6 +52,12 @@ class MainActivity : BaseActivity() {
             setLog("total data : ${it.size}")
             adapter.insertAll(it)
         }
+    }
+
+    private fun onDirectScoreBoard(sport: SportModel) {
+        val intent = Intent(this, ScoreBoardActivity::class.java)
+        intent.putExtra(ScoreBoardActivity.SPORT_ID_ARGS, sport.id)
+        startActivity(intent)
     }
 
     private fun setLog(msg: String) {
