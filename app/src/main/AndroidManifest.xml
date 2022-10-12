@@ -15,6 +15,7 @@
         <activity
             android:name=".ui.score.ScoreBoardActivity"
             android:screenOrientation="landscape"
+            android:theme="@style/NoActionBar.Fullscreen"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

@@ -41,24 +41,29 @@
                     android:text="@string/player_1"
                     android:textColor="@color/textWhite" />
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/recyclerPlayer1"
-                    style="@style/textScoreBoard"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <FrameLayout
+                    android:layout_width="@dimen/_195sdp"
+                    android:layout_height="@dimen/_210sdp"
                     android:layout_above="@id/ivSwipeScorePlayer1"
                     android:layout_below="@id/tvPlayer1"
                     android:layout_centerHorizontal="true"
-                    android:minWidth="@dimen/_180sdp"
-                    tools:listitem="@layout/item_score_board" />
+                    >
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/viewPagerPlayer1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" />
+
+                </FrameLayout>
 
                 <ImageView
                     android:id="@+id/ivSwipeScorePlayer1"
-                    android:layout_width="@dimen/_48sdp"
+                    android:layout_width="@dimen/_24sdp"
                     android:layout_height="@dimen/_48sdp"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:src="@drawable/ic_arrow_down_dark" />
+                    android:src="@drawable/ic_swipe_up_48" />
 
             </RelativeLayout>
 
@@ -78,24 +83,29 @@
                     android:text="@string/player_2"
                     android:textColor="@color/textWhite" />
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/recyclerPlayer2"
-                    style="@style/textScoreBoard"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <FrameLayout
+                    android:layout_width="@dimen/_195sdp"
+                    android:layout_height="@dimen/_210sdp"
                     android:layout_above="@id/ivSwipeScorePlayer2"
                     android:layout_below="@id/tvPlayer2"
                     android:layout_centerHorizontal="true"
-                    android:minWidth="@dimen/_180sdp"
-                    tools:listitem="@layout/item_score_board" />
+                    >
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/viewPagerPlayer2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" />
+
+                </FrameLayout>
 
                 <ImageView
                     android:id="@+id/ivSwipeScorePlayer2"
-                    android:layout_width="@dimen/_48sdp"
+                    android:layout_width="@dimen/_24sdp"
                     android:layout_height="@dimen/_48sdp"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:src="@drawable/ic_arrow_down_dark" />
+                    android:src="@drawable/ic_swipe_up_48" />
 
             </RelativeLayout>
 

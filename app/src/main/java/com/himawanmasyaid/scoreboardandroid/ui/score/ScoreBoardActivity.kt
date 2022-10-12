@@ -3,11 +3,10 @@ package com.himawanmasyaid.scoreboardandroid.ui.score
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.himawanmasyaid.scoreboardandroid.R
 import com.himawanmasyaid.scoreboardandroid.common.viewBinding
 import com.himawanmasyaid.scoreboardandroid.databinding.ActivityScoreBoardBinding
-import com.himawanmasyaid.scoreboardandroid.ui.score.adapter.ScoreFirstPlayerAdapter
+import com.himawanmasyaid.scoreboardandroid.model.state.ViewState
+import com.himawanmasyaid.scoreboardandroid.ui.score.adapter.ScoreAdapter
 
 class ScoreBoardActivity : AppCompatActivity() {
 
@@ -15,15 +14,15 @@ class ScoreBoardActivity : AppCompatActivity() {
     private val viewModel by viewModels<ScoreBoardViewModel>()
 
     private val adapterScoreFirstPlayer by lazy(LazyThreadSafetyMode.NONE) {
-        ScoreFirstPlayerAdapter()
+        ScoreAdapter()
     }
 
     private val adapterScoreSecondPlayer by lazy(LazyThreadSafetyMode.NONE) {
-        ScoreFirstPlayerAdapter()
+        ScoreAdapter()
     }
 
     companion object {
-        const val SPORT_ID_ARGS : String = "SPORT_ID_ARGS"
+        const val SPORT_ID_ARGS: String = "SPORT_ID_ARGS"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,24 +32,21 @@ class ScoreBoardActivity : AppCompatActivity() {
         val sportId = intent.getIntExtra(SPORT_ID_ARGS, 0)
         initView()
         initListener()
+        startObserve()
         viewModel.getScoreBoardBySportId(sportId)
 
     }
 
     private fun initView() {
 
-        with(binding.recyclerPlayer1) {
-            adapter = adapterScoreFirstPlayer
-            apply {
-                layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
-            }
+        with(binding.viewPagerPlayer1) {
+            offscreenPageLimit = 1
+            adapter = adapterScoreSecondPlayer
         }
 
-        with(binding.recyclerPlayer2) {
+        with(binding.viewPagerPlayer2) {
+            offscreenPageLimit = 1
             adapter = adapterScoreSecondPlayer
-            apply {
-                layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
-            }
         }
 
     }
@@ -61,9 +57,44 @@ class ScoreBoardActivity : AppCompatActivity() {
             finish()
         }
 
+        binding.ivSwipeScorePlayer1.setOnClickListener {
+            // update slider
+            with(binding.viewPagerPlayer1) {
+                setCurrentItem(currentItem + 1, true)
+            }
+        }
+
+        binding.ivSwipeScorePlayer2.setOnClickListener {
+            // update slider
+            with(binding.viewPagerPlayer2) {
+                setCurrentItem(currentItem + 1, true)
+            }
+        }
+
     }
 
     private fun startObserve() {
+
+        viewModel.scoreBoardState.observe(this) {
+            when (it) {
+                is ViewState.Loading -> {
+
+                }
+                is ViewState.Success -> {
+
+                    adapterScoreFirstPlayer.clear()
+                    adapterScoreSecondPlayer.clear()
+
+                    adapterScoreFirstPlayer.insertAll(it.data.scoreList)
+                    adapterScoreSecondPlayer.insertAll(it.data.scoreList)
+
+                }
+                is ViewState.Error -> {
+
+                }
+            }
+        }
+
 
     }
 

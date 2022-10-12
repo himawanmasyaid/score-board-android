@@ -3,9 +3,11 @@ package com.himawanmasyaid.scoreboardandroid.ui.score.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.himawanmasyaid.scoreboardandroid.databinding.ItemScoreBinding
 import com.himawanmasyaid.scoreboardandroid.databinding.ItemScoreBoardBinding
+import com.himawanmasyaid.scoreboardandroid.databinding.ItemSportsBinding
 
-class ScoreFirstPlayerAdapter : RecyclerView.Adapter<ScoreFirstPlayerAdapter.ViewHolder>() {
+class ScoreAdapter: RecyclerView.Adapter<ScoreAdapter.ViewHolder>() {
 
     var listData: MutableList<Int> = ArrayList()
 
@@ -25,7 +27,7 @@ class ScoreFirstPlayerAdapter : RecyclerView.Adapter<ScoreFirstPlayerAdapter.Vie
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
-            ItemScoreBoardBinding.inflate(
+            ItemScoreBinding.inflate(
                 LayoutInflater.from(parent.context),
                 parent,
                 false
@@ -40,7 +42,7 @@ class ScoreFirstPlayerAdapter : RecyclerView.Adapter<ScoreFirstPlayerAdapter.Vie
 
     override fun getItemCount() = listData.size
 
-    inner class ViewHolder(val binding: ItemScoreBoardBinding) :
+    inner class ViewHolder(val binding: ItemScoreBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
         fun bindTo(score: Int) {
