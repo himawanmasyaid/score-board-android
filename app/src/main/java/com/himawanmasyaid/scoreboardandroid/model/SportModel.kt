@@ -26,6 +26,12 @@ fun getSportListData(): List<SportModel> {
             total_score = 12,
             image = R.drawable.ic_launcher_background
         ),
+        SportModel(
+            id = 3,
+            name = "Bola Voli",
+            total_score = 24,
+            image = R.drawable.ic_launcher_background
+        ),
     )
 
 }
