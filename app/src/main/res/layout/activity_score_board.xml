@@ -32,7 +32,7 @@
 
                 <TextView
                     android:id="@+id/tvPlayer1"
-                    style="@style/textBody2"
+                    style="@style/textSub2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
@@ -41,17 +41,16 @@
                     android:text="@string/player_1"
                     android:textColor="@color/textWhite" />
 
-                <TextView
-                    android:id="@+id/tvScorePlayer1"
-                    style="@style/textSub1"
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerPlayer1"
+                    style="@style/textScoreBoard"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_above="@id/ivSwipeScorePlayer1"
-                    android:layout_below="@+id/tvPlayer1"
+                    android:layout_below="@id/tvPlayer1"
                     android:layout_centerHorizontal="true"
-                    android:text="0"
-                    android:textColor="@color/textPrimary"
-                    android:textSize="@dimen/_140sdp" />
+                    android:minWidth="@dimen/_180sdp"
+                    tools:listitem="@layout/item_score_board" />
 
                 <ImageView
                     android:id="@+id/ivSwipeScorePlayer1"
@@ -59,7 +58,6 @@
                     android:layout_height="@dimen/_48sdp"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginBottom="@dimen/_8sdp"
                     android:src="@drawable/ic_arrow_down_dark" />
 
             </RelativeLayout>
@@ -71,7 +69,7 @@
 
                 <TextView
                     android:id="@+id/tvPlayer2"
-                    style="@style/textBody2"
+                    style="@style/textSub2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
@@ -80,17 +78,16 @@
                     android:text="@string/player_2"
                     android:textColor="@color/textWhite" />
 
-                <TextView
-                    android:id="@+id/tvScorePlayer2"
-                    style="@style/textSub1"
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerPlayer2"
+                    style="@style/textScoreBoard"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_above="@id/ivSwipeScorePlayer2"
-                    android:layout_below="@+id/tvPlayer2"
+                    android:layout_below="@id/tvPlayer2"
                     android:layout_centerHorizontal="true"
-                    android:text="0"
-                    android:textColor="@color/textPrimary"
-                    android:textSize="@dimen/_140sdp" />
+                    android:minWidth="@dimen/_180sdp"
+                    tools:listitem="@layout/item_score_board" />
 
                 <ImageView
                     android:id="@+id/ivSwipeScorePlayer2"
@@ -98,7 +95,6 @@
                     android:layout_height="@dimen/_48sdp"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginBottom="@dimen/_8sdp"
                     android:src="@drawable/ic_arrow_down_dark" />
 
             </RelativeLayout>
@@ -107,13 +103,13 @@
 
         <TextView
             android:id="@+id/tvCenter"
-            style="@style/textH1"
+            style="@style/textScoreBoard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text=":"
             android:textColor="@color/textPrimary"
-            android:textSize="@dimen/_50ssp" />
+            android:textSize="@dimen/_90ssp" />
 
     </RelativeLayout>
 
