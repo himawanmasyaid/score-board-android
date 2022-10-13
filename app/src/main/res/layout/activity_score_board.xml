@@ -111,6 +111,18 @@
 
         </LinearLayout>
 
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="set\n 1 : 0"
+            android:gravity="center"
+            style="@style/textSub1"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/tvCenter"
+            android:textColor="@color/textWhite"
+            />
+
         <TextView
             android:id="@+id/tvCenter"
             style="@style/textScoreBoard"
@@ -122,6 +134,5 @@
             android:textSize="@dimen/_90ssp" />
 
     </RelativeLayout>
-
 
 </RelativeLayout>

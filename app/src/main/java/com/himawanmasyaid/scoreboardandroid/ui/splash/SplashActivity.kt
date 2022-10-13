@@ -25,6 +25,7 @@ class SplashActivity : AppCompatActivity() {
 
         viewModel.splashState.observe(this) {
             startActivity(Intent(this, MainActivity::class.java))
+            finish()
         }
 
     }
