@@ -13,4 +13,13 @@
     <string name="player_1">Player 1</string>
     <string name="player_2">Player 2</string>
 
+    /*
+    DIALOG
+    */ --------------------------
+    <string name="exit_game">Exit Game</string>
+    <string name="exit_game_desc">Are you sure want to exit the game?</string>
+    <string name="exit">Exit</string>
+    <string name="cancel">Cancel</string>
+
+
 </resources>

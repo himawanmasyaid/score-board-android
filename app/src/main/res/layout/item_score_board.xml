@@ -20,7 +20,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="@dimen/_10sdp"
         android:text="0"
-        android:textColor="@color/textPrimary"
+        android:textColor="@color/textScoreBoard"
         android:textSize="@dimen/_130sdp" />
 
 </RelativeLayout>

@@ -3,9 +3,11 @@ package com.himawanmasyaid.scoreboardandroid.ui.score
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
+import com.himawanmasyaid.scoreboardandroid.R
 import com.himawanmasyaid.scoreboardandroid.common.viewBinding
 import com.himawanmasyaid.scoreboardandroid.databinding.ActivityScoreBoardBinding
 import com.himawanmasyaid.scoreboardandroid.model.state.ViewState
+import com.himawanmasyaid.scoreboardandroid.ui.dialog.ConfirmDialog
 import com.himawanmasyaid.scoreboardandroid.ui.score.adapter.ScoreAdapter
 
 class ScoreBoardActivity : AppCompatActivity() {
@@ -54,7 +56,7 @@ class ScoreBoardActivity : AppCompatActivity() {
     private fun initListener() {
 
         binding.ivClose.setOnClickListener {
-            finish()
+            showExitDialog()
         }
 
         binding.ivSwipeScorePlayer1.setOnClickListener {
@@ -95,7 +97,19 @@ class ScoreBoardActivity : AppCompatActivity() {
             }
         }
 
+    }
 
+    private fun showExitDialog() {
+        val dialog = ConfirmDialog(
+            title = getString(R.string.exit_game),
+            message = getString(R.string.exit_game_desc)
+        )
+        dialog.show(supportFragmentManager, "dialog")
+        dialog.setListener(
+            acceptActionListener = {
+                finish()
+            }
+        )
     }
 
 }
