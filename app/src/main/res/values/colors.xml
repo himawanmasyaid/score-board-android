@@ -23,13 +23,29 @@
     <color name="textBlack">#303030</color>
 
     /*
+    BUTTON
+    */ --------------------------
+    <color name="btnClose">#E50914</color>
+    <color name="btnPrimary">#FF03DAC5</color>
+
+
+    /*
     BACKGROUND
     */ --------------------------
 <!--    <color name="background_dark">#030304</color>-->
 <!--    <color name="background_dark">#070B0C</color>-->
     <color name="background_dark">#121212</color>
-    <color name="background_light">#FFFFFFFF</color>
-    <color name="background_score">#212121</color>
+    <color name="background_light">#EDF3ED</color>
+    <color name="background_score">#2B2B2B</color>
+
+
+    /*
+    DARK COLOR
+    */ --------------------------
+    <color name="dark1">#1B1C1E</color>
+    <color name="dark2">#1F1F1F</color>
+    <color name="dark3">#2B2B2B</color>
+    <color name="dark4">#303030</color>
 
 
 </resources>

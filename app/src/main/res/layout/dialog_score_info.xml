@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:layout_gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="match_parent"
+        android:background="@color/dark3"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/_16sdp">
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/textH2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:text="@string/home_wording"
+            android:textColor="@color/textWhite" />
+
+
+        <TextView
+            android:id="@+id/tvMessage"
+            style="@style/textBody3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_wording_description"
+            android:textColor="@color/textWhite" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/btnDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:text="Keluar" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/btnDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/btn_primary_rounded"
+            android:text="Reset" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
