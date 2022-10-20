@@ -27,6 +27,9 @@ class ScoreBoardActivity : AppCompatActivity() {
         const val SPORT_ID_ARGS: String = "SPORT_ID_ARGS"
     }
 
+    private var winSetPlayer1 = 0
+    private var winSetPlayer2 = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
@@ -50,6 +53,8 @@ class ScoreBoardActivity : AppCompatActivity() {
             offscreenPageLimit = 1
             adapter = adapterScoreSecondPlayer
         }
+
+        setWinnerView(winSetPlayer1, winSetPlayer2)
 
     }
 
@@ -110,6 +115,10 @@ class ScoreBoardActivity : AppCompatActivity() {
                 finish()
             }
         )
+    }
+
+    private fun setWinnerView(player1: Int, player2: Int) {
+        binding.tvSet.text = "$player1 : $player2"
     }
 
 }

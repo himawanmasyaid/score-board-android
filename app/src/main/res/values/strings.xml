@@ -9,6 +9,7 @@
 
     <string name="total_game_score">The total score of this match is %s point(s)</string>
     <string name="total_game_duration">The duration of this match is %s minute(s)</string>
+    <string name="set" translatable="false">set</string>
 
     <string name="player_1">Player 1</string>
     <string name="player_2">Player 2</string>

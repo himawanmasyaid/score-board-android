@@ -111,17 +111,35 @@
 
         </LinearLayout>
 
-
-        <TextView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="set\n 1 : 0"
-            android:gravity="center"
-            style="@style/textSub1"
+            android:orientation="vertical"
             android:layout_centerHorizontal="true"
-            android:layout_above="@+id/tvCenter"
-            android:textColor="@color/textWhite"
-            />
+            android:gravity="center"
+            android:layout_above="@+id/tvCenter">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/set"
+                android:gravity="center"
+                style="@style/textBody2"
+                android:textColor="@color/textWhite"
+                />
+
+            <TextView
+                android:id="@+id/tvSet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 : 0"
+                android:gravity="center"
+                style="@style/textSub1"
+                android:textColor="@color/textWhite"
+                />
+
+        </LinearLayout>
+
 
         <TextView
             android:id="@+id/tvCenter"
