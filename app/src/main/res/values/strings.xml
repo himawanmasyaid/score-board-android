@@ -6,8 +6,8 @@
 
     <string name="badminton_desc">This sport has a match point of 21</string>
 
-    <string name="total_game_score">The total score of this match is %s point(s)</string>
-    <string name="total_game_duration">The duration of this match is %s minute(s)</string>
+    <string name="total_game_score">The total score of this match is %s points</string>
+    <string name="total_game_duration">The duration of this match is %s minutes</string>
     <string name="set" translatable="false">set</string>
 
     <string name="player_1">Player 1</string>

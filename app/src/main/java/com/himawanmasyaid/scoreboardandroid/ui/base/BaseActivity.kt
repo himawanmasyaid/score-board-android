@@ -10,7 +10,5 @@ abstract class BaseActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         AppCompatDelegate.setCompatVectorFromResourcesEnabled(true)
 
-
     }
-
 }
