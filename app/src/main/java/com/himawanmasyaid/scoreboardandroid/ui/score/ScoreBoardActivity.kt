@@ -38,7 +38,7 @@ class ScoreBoardActivity : AppCompatActivity() {
         initView()
         initListener()
         startObserve()
-        viewModel.getScoreBoardBySportId(sportId)
+        viewModel.getScoreBoardBySportId(this, sportId)
 
     }
 

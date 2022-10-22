@@ -30,7 +30,7 @@ class MainActivity : BaseActivity() {
 
         initView()
         startObserve()
-        viewModel.getSports()
+        viewModel.getSports(this)
 
     }
 
@@ -49,19 +49,15 @@ class MainActivity : BaseActivity() {
     private fun startObserve() {
 
         viewModel.sportState.observe(this) {
-            setLog("total data : ${it.size}")
             adapter.insertAll(it)
         }
+
     }
 
     private fun onDirectScoreBoard(sport: SportModel) {
         val intent = Intent(this, ScoreBoardActivity::class.java)
         intent.putExtra(ScoreBoardActivity.SPORT_ID_ARGS, sport.id)
         startActivity(intent)
-    }
-
-    private fun setLog(msg: String) {
-        Log.e("main", msg)
     }
 
 }

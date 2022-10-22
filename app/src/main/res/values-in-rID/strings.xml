@@ -5,7 +5,6 @@
     <string name="home_wording">Virtual Score Board</string>
     <string name="home_wording_description">Pilih mau olahraga apa hari ini</string>
 
-    <string name="badminton">Badminton</string>
     <string name="badminton_desc">Total skor pertandingan ini adalah 21 poin</string>
 
     <string name="total_game_score">Total skor pertandingan ini adalah %s poin</string>
@@ -13,6 +12,13 @@
 
     <string name="player_1">Pemain 1</string>
     <string name="player_2">Pemain 2</string>
+
+    /*
+    GAME SPORT
+    */ --------------------------
+    <string name="volleyball">Bola Voli</string>
+    <string name="badminton">Bulu Tangkis</string>
+    <string name="table_tennis">Tenis Meja</string>
 
     /*
     DIALOG

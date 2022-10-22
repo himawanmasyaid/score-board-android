@@ -4,7 +4,6 @@
     <string name="home_wording">Virtual Score Board</string>
     <string name="home_wording_description">Choose your sport activity today</string>
 
-    <string name="badminton">Badminton</string>
     <string name="badminton_desc">This sport has a match point of 21</string>
 
     <string name="total_game_score">The total score of this match is %s point(s)</string>
@@ -13,6 +12,13 @@
 
     <string name="player_1">Player 1</string>
     <string name="player_2">Player 2</string>
+
+    /*
+    GAME SPORT
+    */ --------------------------
+    <string name="volleyball">Volleyball</string>
+    <string name="badminton">Badminton</string>
+    <string name="table_tennis">Table tennis</string>
 
     /*
     DIALOG

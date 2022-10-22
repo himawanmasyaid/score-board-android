@@ -1,5 +1,6 @@
 package com.himawanmasyaid.scoreboardandroid.ui.score
 
+import android.content.Context
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -13,12 +14,12 @@ class ScoreBoardViewModel() : ViewModel() {
 
     val scoreBoardState = MutableLiveData<ViewState<ScoreBoardModel>>()
 
-    fun getScoreBoardBySportId(id: Int) {
+    fun getScoreBoardBySportId(context: Context, id: Int) {
 
         viewModelScope.launch {
             scoreBoardState.postValue(ViewState.Loading())
             try {
-                val sport = getSportDetail(id)
+                val sport = getSportDetail(context, id)
 
                 if (sport == null) {
                     scoreBoardState.postValue(ViewState.Error(null))

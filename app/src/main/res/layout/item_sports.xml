@@ -20,31 +20,42 @@
             android:padding="@dimen/_8sdp"
             >
 
-            <ImageView
-                android:id="@+id/ivIcon"
-                android:layout_width="@dimen/_80sdp"
-                android:layout_height="@dimen/_80sdp"
+            <RelativeLayout
+                android:id="@+id/iconLayout"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_70sdp"
                 android:layout_alignParentStart="true"
-                android:src="@mipmap/ic_launcher" />
+                android:layout_centerVertical="true"
+                >
+
+                <ImageView
+                    android:id="@+id/ivIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_launcher"
+                    />
+
+            </RelativeLayout>
 
             <TextView
                 android:id="@+id/tvSportName"
                 style="@style/textH3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_8sdp"
                 android:layout_marginTop="@dimen/_8sdp"
-                android:layout_toEndOf="@+id/ivIcon"
+                android:layout_toEndOf="@+id/iconLayout"
                 android:text="@string/badminton" />
 
             <TextView
                 android:id="@+id/tvSportDesc"
-                style="@style/textBody3"
+                style="@style/textBody4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tvSportName"
-                android:layout_marginStart="@dimen/_16sdp"
-                android:layout_toEndOf="@+id/ivIcon"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_toEndOf="@+id/iconLayout"
                 android:text="@string/badminton_desc" />
 
         </RelativeLayout>
