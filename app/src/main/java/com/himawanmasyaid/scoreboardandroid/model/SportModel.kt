@@ -24,7 +24,7 @@ fun getSportListData(context: Context): List<SportModel> {
         SportModel(
             id = 2,
             name = context.getString(R.string.table_tennis),
-            total_score = 12,
+            total_score = 11,
             image = R.drawable.ic_tenis_table
         ),
         SportModel(
