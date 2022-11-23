@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="0"
-            android:textColor="@color/textPrimary"
+            android:textColor="@color/textScoreBoard"
             android:textSize="@dimen/_130sdp" />
 
     </RelativeLayout>

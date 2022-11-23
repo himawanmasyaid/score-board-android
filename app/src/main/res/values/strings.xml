@@ -4,13 +4,36 @@
     <string name="home_wording">Virtual Score Board</string>
     <string name="home_wording_description">Choose your sport activity today</string>
 
-    <string name="badminton">Badminton</string>
     <string name="badminton_desc">This sport has a match point of 21</string>
 
-    <string name="total_game_score">The total score of this match is %s point(s)</string>
-    <string name="total_game_duration">The duration of this match is %s minute(s)</string>
-
+    /*
+    SCORE BOARD
+    */ --------------------------
     <string name="player_1">Player 1</string>
     <string name="player_2">Player 2</string>
+    <string name="total_game_score">The total score of this match is %s points</string>
+    <string name="total_game_duration">The duration of this match is %s minutes</string>
+    <string name="set" translatable="false">set</string>
+    <string name="congratulation">Congratulation</string>
+    <string name="congratulation_message">Congratulation %1s won match %2s round , click continue to start the next round</string>
+    <string name="continue_match">Continue</string>
+
+    /*
+    GAME SPORT
+    */ --------------------------
+    <string name="volleyball">Volleyball</string>
+    <string name="badminton">Badminton</string>
+    <string name="table_tennis">Table tennis</string>
+
+    /*
+    DIALOG
+    */ --------------------------
+    <string name="exit_game">Exit Game</string>
+    <string name="exit_game_desc">Are you sure want to exit the game?</string>
+    <string name="exit">Exit</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="input_name">Input name...</string>
+
 
 </resources>

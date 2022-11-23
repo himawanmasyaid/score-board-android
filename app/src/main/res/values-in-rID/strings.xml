@@ -5,13 +5,35 @@
     <string name="home_wording">Virtual Score Board</string>
     <string name="home_wording_description">Pilih mau olahraga apa hari ini</string>
 
-    <string name="badminton">Badminton</string>
     <string name="badminton_desc">Total skor pertandingan ini adalah 21 poin</string>
 
-    <string name="total_game_score">Total skor pertandingan ini adalah %s poin</string>
-    <string name="total_game_duration">Durasi pertandingan ini adalah %s menit</string>
+    /*
+    SCORE BOARD
+    */ --------------------------
 
     <string name="player_1">Pemain 1</string>
     <string name="player_2">Pemain 2</string>
+    <string name="total_game_score">Total skor pertandingan ini adalah %s poin</string>
+    <string name="total_game_duration">Durasi pertandingan ini adalah %s menit</string>
+    <string name="congratulation">Selamat</string>
+    <string name="congratulation_message">Selamat %s memenangkan pertandingan babak %s, klik selanjutnya untuk memulai babak selanjutnya</string>
+    <string name="continue_match">Selanjutnya</string>
+
+    /*
+    GAME SPORT
+    */ --------------------------
+    <string name="volleyball">Bola Voli</string>
+    <string name="badminton">Bulu Tangkis</string>
+    <string name="table_tennis">Tenis Meja</string>
+
+    /*
+    DIALOG
+    */ --------------------------
+    <string name="exit_game">Keluar Permainan</string>
+    <string name="exit_game_desc">Apakah Anda yakin ingin keluar dari permainan ini?</string>
+    <string name="exit">Keluar</string>
+    <string name="cancel">Batal</string>
+    <string name="save">Simpan</string>
+    <string name="input_name">Masukkan nama...</string>
 
 </resources>

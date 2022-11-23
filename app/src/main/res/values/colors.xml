@@ -8,19 +8,29 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="colorPrimary">#543884</color>
+    <color name="colorPrimary">@color/colorOrange</color>
     <color name="colorPrimaryDark">#262254</color>
     <color name="colorAccent">#ddbff3</color>
     <color name="colorSecond">#FFC728</color>
+    <color name="colorOrange">#FF6900</color>
 
     /*
     TEXT
     */ --------------------------
 
     <color name="textWhite">#ffffff</color>
-    <color name="textPrimary">#DFFF00</color>
+    <color name="textPrimary">@color/colorOrange</color>
     <color name="textYellow">#FFC728</color>
     <color name="textBlack">#303030</color>
+    <color name="textScoreBoard">#DFFF00</color>
+
+    /*
+    BUTTON
+    */ --------------------------
+    <color name="btnClose">#E50914</color>
+    <color name="btnPrimary">@color/colorOrange</color>
+    <color name="btnGray">#d8d8df</color>
+
 
     /*
     BACKGROUND
@@ -28,8 +38,24 @@
 <!--    <color name="background_dark">#030304</color>-->
 <!--    <color name="background_dark">#070B0C</color>-->
     <color name="background_dark">#121212</color>
-    <color name="background_light">#FFFFFFFF</color>
-    <color name="background_score">#212121</color>
+    <color name="background_light">#EDF3ED</color>
+    <color name="background_score">#2B2B2B</color>
+
+    /*
+    LINE
+    */ --------------------------
+
+    <color name="line_input">#E0E0E0</color>
+    <color name="line">#F2F2F2</color>
+
+    /*
+    DARK COLOR
+    */ --------------------------
+    <color name="dark1">#1B1C1E</color>
+    <color name="dark2">#1F1F1F</color>
+    <color name="dark3">#2B2B2B</color>
+    <color name="dark4">#303030</color>
+    <color name="dark5">#3C3C3C</color>
 
 
 </resources>

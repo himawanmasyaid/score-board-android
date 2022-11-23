@@ -4,11 +4,14 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
+import com.himawanmasyaid.scoreboardandroid.common.getLocale
+import com.himawanmasyaid.scoreboardandroid.common.setLocale
 import com.himawanmasyaid.scoreboardandroid.common.viewBinding
 import com.himawanmasyaid.scoreboardandroid.databinding.ActivitySplashBinding
+import com.himawanmasyaid.scoreboardandroid.ui.base.BaseActivity
 import com.himawanmasyaid.scoreboardandroid.ui.main.MainActivity
 
-class SplashActivity : AppCompatActivity() {
+class SplashActivity : BaseActivity () {
 
     private val binding by viewBinding(ActivitySplashBinding::inflate)
     private val viewModel by viewModels<SplashViewModel>()
@@ -18,6 +21,7 @@ class SplashActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         startObserve()
+        setLocale(this, getLocale())
 
     }
 
@@ -25,6 +29,7 @@ class SplashActivity : AppCompatActivity() {
 
         viewModel.splashState.observe(this) {
             startActivity(Intent(this, MainActivity::class.java))
+            finish()
         }
 
     }

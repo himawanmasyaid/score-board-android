@@ -4,8 +4,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.himawanmasyaid.scoreboardandroid.databinding.ItemScoreBinding
-import com.himawanmasyaid.scoreboardandroid.databinding.ItemScoreBoardBinding
-import com.himawanmasyaid.scoreboardandroid.databinding.ItemSportsBinding
 
 class ScoreAdapter: RecyclerView.Adapter<ScoreAdapter.ViewHolder>() {
 
