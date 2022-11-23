@@ -33,5 +33,7 @@
     <string name="exit_game_desc">Apakah Anda yakin ingin keluar dari permainan ini?</string>
     <string name="exit">Keluar</string>
     <string name="cancel">Batal</string>
+    <string name="save">Simpan</string>
+    <string name="input_name">Masukkan nama...</string>
 
 </resources>

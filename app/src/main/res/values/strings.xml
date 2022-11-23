@@ -32,6 +32,8 @@
     <string name="exit_game_desc">Are you sure want to exit the game?</string>
     <string name="exit">Exit</string>
     <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="input_name">Input name...</string>
 
 
 </resources>

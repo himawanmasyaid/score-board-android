@@ -5,9 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.viewbinding.ViewBinding
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
-abstract class BaseDialogFragment<VBinding: ViewBinding>
-    (val inflate: CustomInflate<VBinding>) : androidx.fragment.app.DialogFragment() {
+abstract class BaseBottomDialogFragment<VBinding : ViewBinding>
+    (val inflate: CustomInflate<VBinding>) : BottomSheetDialogFragment() {
 
     protected lateinit var binding: VBinding
 
@@ -24,6 +25,7 @@ abstract class BaseDialogFragment<VBinding: ViewBinding>
         return binding.root
     }
 
+
     fun setListener(
         acceptActionListener: () -> Unit = { dismiss() },
         cancelActionListener: () -> Unit = { dismiss() },
@@ -33,5 +35,6 @@ abstract class BaseDialogFragment<VBinding: ViewBinding>
         this.cancelActionListener = cancelActionListener
         this.closeActionListener = closeActionListener
     }
+
 
 }

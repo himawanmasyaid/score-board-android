@@ -7,10 +7,12 @@ import androidx.viewpager2.widget.ViewPager2
 import com.himawanmasyaid.scoreboardandroid.R
 import com.himawanmasyaid.scoreboardandroid.common.viewBinding
 import com.himawanmasyaid.scoreboardandroid.databinding.ActivityScoreBoardBinding
+import com.himawanmasyaid.scoreboardandroid.model.PlayerNameModel
 import com.himawanmasyaid.scoreboardandroid.model.SportModel
 import com.himawanmasyaid.scoreboardandroid.model.state.ViewState
 import com.himawanmasyaid.scoreboardandroid.ui.dialog.ConfirmDialog
 import com.himawanmasyaid.scoreboardandroid.ui.score.adapter.ScoreAdapter
+import com.himawanmasyaid.scoreboardandroid.ui.score.dialog.UpdatePlayerNameBottomDialog
 import com.himawanmasyaid.scoreboardandroid.ui.score.dialog.WinnerMatchDialog
 
 
@@ -76,7 +78,7 @@ class ScoreBoardActivity : AppCompatActivity() {
             }
 
             ivUpdate.setOnClickListener {
-
+                showUpdatePlayerNameDialog()
             }
 
             ivSwipeScorePlayer1.setOnClickListener {
@@ -151,6 +153,24 @@ class ScoreBoardActivity : AppCompatActivity() {
                 finish()
             }
         )
+    }
+
+    private fun showUpdatePlayerNameDialog() {
+
+        val dialog = UpdatePlayerNameBottomDialog(
+            player1NameString = binding.tvPlayer1.text.toString(),
+            player2NameString = binding.tvPlayer2.text.toString()
+        )
+        dialog.show(supportFragmentManager, "dialog")
+        dialog.setOnclick(object : UpdatePlayerNameBottomDialog.OnUpdatePlayerNameDialog {
+            override fun onItemSelected(data: PlayerNameModel) {
+                with(binding) {
+                    tvPlayer1.text = data.namePlayer1
+                    tvPlayer2.text = data.namePlayer2
+                }
+            }
+        })
+
     }
 
     private fun showWinnerDialog(isPlayer1Won: Boolean) {

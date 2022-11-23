@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/white">
     <item>
-        <shape android:shape="rectangle">
-            <solid android:color="@color/btnPrimary" />
-            <corners android:radius="@dimen/_10sdp" />
-        </shape>
+        <selector>
+            <item
+                android:drawable="@drawable/btn_gray"
+                android:state_enabled="false"
+                />
+            <item
+                android:drawable="@drawable/btn_orange"
+                android:state_enabled="true"
+                />
+        </selector>
     </item>
-
-</selector>
+</ripple>

@@ -29,6 +29,7 @@
     */ --------------------------
     <color name="btnClose">#E50914</color>
     <color name="btnPrimary">@color/colorOrange</color>
+    <color name="btnGray">#d8d8df</color>
 
 
     /*
@@ -40,6 +41,12 @@
     <color name="background_light">#EDF3ED</color>
     <color name="background_score">#2B2B2B</color>
 
+    /*
+    LINE
+    */ --------------------------
+
+    <color name="line_input">#E0E0E0</color>
+    <color name="line">#F2F2F2</color>
 
     /*
     DARK COLOR
